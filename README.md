@@ -22,9 +22,9 @@ bash build.sh
 java -jar .dist/app.jar
 
 # 另起一个终端，替换 class
-javac 
+javac reload/Hello.java
 cd .dist
-java -Xbootclasspath/a:${JAVA_HOME}/lib/tools.jar -jar .dist/attach.jar ${classFilePath}
+java -Xbootclasspath/a:${JAVA_HOME}/lib/tools.jar -jar attach.jar reload/Hello.class
 ```
 
 
